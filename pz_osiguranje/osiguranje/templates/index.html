@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <title>{% block title %}Osiguranje Euroherc{% endblock %}</title>
+</head>
+
+<body>
+    <h1>Osiguranje Euroherc</h1>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="">Pocetna</a></li>
+            <li><a href="/podruznica">Podruznica</a></li>
+            <li><a href="/klijent">Klijenti</a></li>
+            <li><a href="/polica">Polica</a></li>
+
+            
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>

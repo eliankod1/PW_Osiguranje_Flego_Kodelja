@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block content %}
+<br>
+<h2> Police </h2>
+<br>
+{% for polica in polica_list %}
+
+<div class="polica">
+    <h4> Vrsta police: {{polica.vrsta}} </h4>
+    <!--<p> Trajanje police: {{polica.trajanje}} god. </p> -->
+</div>
+
+{% endfor %}
+
+{% endblock %}

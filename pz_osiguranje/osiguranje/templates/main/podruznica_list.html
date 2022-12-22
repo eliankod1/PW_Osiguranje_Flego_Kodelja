@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block content %}
+<br>
+<h2> Podruznice </h2>
+<br>
+{% for podruznica in podruznica_list %}
+
+<div class="podruznica">
+    <h4> Mjesto: {{podruznica.mjesto}} </h4>
+ 
+</div>
+
+{% endfor %}
+
+{% endblock %}

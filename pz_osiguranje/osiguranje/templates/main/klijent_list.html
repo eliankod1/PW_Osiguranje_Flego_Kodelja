@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% block content %}
+<br>
+<h2> Klijenti </h2>
+<br>
+{% for klijent in klijent_list %}
+
+<div class="klijent">
+    <h4> {{klijent.prezime}} {{klijent.ime}} </h4> 
+    <p>  {{klijent.datum_rodenja}} </p>
+    <p> Podruznica: {{klijent.podruznica}}</p>
+    <p> Polica: {{klijent.polica}}</p> <br>
+</div>
+
+{% endfor %}
+
+{% endblock %}
